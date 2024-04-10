@@ -36,7 +36,6 @@ export const authOptions: NextAuthOptions = {
 
   callbacks: {
     async jwt({ token, user }) {
-      console.log("user = ", user);
       const dbUser = (await db.get(`user:${token.id}`)) as User | null;
 
       if (!dbUser) {
