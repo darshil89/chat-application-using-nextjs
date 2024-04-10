@@ -1,8 +1,8 @@
-import Button from '@/components/ui/Button'
-import Image from 'next/image'
+import Button from "@/components/ui/Button";
+import { db } from "@/lib/db";
+import Image from "next/image";
 
-export default function Home() {
-  return (
-    <Button>Hello</Button>
-  )
+export default async function Home() {
+  // await db.set("hello:3", "world");
+  return <Button>Hello</Button>;
 }
