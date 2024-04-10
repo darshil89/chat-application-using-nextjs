@@ -36,7 +36,8 @@ export const authOptions: NextAuthOptions = {
 
   callbacks: {
     async jwt({ token, user }) {
-      const dbUser = (await db.get(`user:${user.id}`)) as User | null;
+      console.log("user = ", user);
+      const dbUser = (await db.get(`user:${token.id}`)) as User | null;
 
       if (!dbUser) {
         token.id = user!.id;
@@ -64,4 +65,6 @@ export const authOptions: NextAuthOptions = {
       return "/dashboard";
     },
   },
+
+  secret: process.env.SECRET,
 };
