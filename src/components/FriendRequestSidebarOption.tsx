@@ -1,7 +1,8 @@
 "use client";
 import { User } from "lucide-react";
 import Link from "next/link";
-import { FC, useState } from "react";
+import { useRouter } from "next/navigation";
+import { FC, use, useEffect, useState } from "react";
 
 interface FriendRequestSidebarOptionProps {
   initialUnseenRequestCount: number;
@@ -15,6 +16,10 @@ const FriendRequestSidebarOption: FC<FriendRequestSidebarOptionProps> = ({
   const [unseenRequestCount, setUnseenRequestCount] = useState<number>(
     initialUnseenRequestCount
   );
+  const router = useRouter();
+  useEffect(() => {
+    router.refresh();
+  }, [unseenRequestCount]);
   return (
     <Link
       href="/dashboard/requests"
