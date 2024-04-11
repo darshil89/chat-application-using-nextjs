@@ -110,7 +110,10 @@ const Layout = async ({ children }: LayoutProps) => {
           </ul>
         </nav>
       </div>
+      <div className="ml-2"> 
+
       {children}
+      </div>
     </div>
   );
 };
