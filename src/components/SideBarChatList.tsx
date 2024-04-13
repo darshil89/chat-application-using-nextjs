@@ -63,7 +63,7 @@ const SideBarChatList: FC<SideBarChatListProps> = ({ friends, sessionId }) => {
       pusherClient.unbind("new_message", chatHandler);
       pusherClient.unbind("new_friend", friendHandler);
     };
-  }, [pathname]);
+  }, [pathname , router , sessionId]);
 
   //useEffect to check wheather the user have opened the chat or not
   useEffect(() => {

@@ -38,10 +38,12 @@ const page = async ({}) => {
   return (
     <div className="container py-12">
       <div className="max-w-xs rounded overflow-hidden shadow-lg mb-10 bg-white">
-        <img
+        <Image
           className="w-32 h-32 rounded-full mx-auto mt-4"
           src={session?.user?.image || ""}
           alt="Profile"
+          width={120}
+          height={120}
         />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{session?.user.name}</div>
