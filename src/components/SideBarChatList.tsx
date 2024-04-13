@@ -60,7 +60,7 @@ const SideBarChatList: FC<SideBarChatListProps> = ({ friends, sessionId }) => {
       pusherClient.unsubscribe(toPusherKey(`user:${sessionId}:chats`));
       pusherClient.unsubscribe(toPusherKey(`user:${sessionId}:friends`));
     };
-  }, [pathname, sessionId, router]);
+  }, [pathname]);
 
   //useEffect to check wheather the user have opened the chat or not
   useEffect(() => {
