@@ -37,7 +37,6 @@ const Layout = async ({ children }: LayoutProps) => {
 
   const friends = await getFriendsByUserId(session.user.id);
 
-
   //Number of unseen friend requests
   const unseenRequestCount = (
     (await fetchRedis(
@@ -60,7 +59,7 @@ const Layout = async ({ children }: LayoutProps) => {
         <nav className="flex flex-1 flex-col">
           <ul role="list" className="flex flex-1 flex-col gap-y-4">
             <li>
-              <SideBarChatList friends={friends} sessionId={session.user.id}/>
+              <SideBarChatList friends={friends} sessionId={session.user.id} />
             </li>
             <li>
               <div className="text-xs font-semibold leading-6 text-gray-400">
@@ -119,7 +118,9 @@ const Layout = async ({ children }: LayoutProps) => {
           </ul>
         </nav>
       </div>
-      <div className="ml-2">{children}</div>
+      <div className="max-h-screen container px-5 py-16 md:py-12 w-full">
+        {children}
+      </div>
     </div>
   );
 };
