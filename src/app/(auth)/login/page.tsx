@@ -9,7 +9,7 @@ import Image from "next/image";
 
 interface Props {}
 
-const page: FC<Props> = () => {
+const Page: FC<Props> = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   async function loginWithGoogle() {
@@ -82,4 +82,4 @@ const page: FC<Props> = () => {
   );
 };
 
-export default page;
+export default Page;
