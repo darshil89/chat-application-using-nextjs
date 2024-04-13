@@ -11,7 +11,6 @@ interface SideBarChatListProps {
 
 const SideBarChatList: FC<SideBarChatListProps> = ({ friends, sessionId }) => {
   const router = useRouter();
-  console.log(friends);
   const pathname = usePathname();
   const [unseenMessages, setUnseenMessages] = useState<Message[]>([]);
   //useEffect to check wheather the user have opened the chat or not
