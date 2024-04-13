@@ -20,14 +20,8 @@ const FriendRequestSidebarOption: FC<FriendRequestSidebarOptionProps> = ({
   );
   const router = useRouter();
   useEffect(() => {
-    console.log("useEffect");
     pusherClient.subscribe(
       toPusherKey(`user:${sessionId}:incoming_friend_requests`)
-    );
-
-    console.log(
-      "subscribed to pusher",
-      `user:${sessionId}:incoming_friend_requests`
     );
 
     const friendRequestHandler = () => {
