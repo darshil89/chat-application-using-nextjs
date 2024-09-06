@@ -44,7 +44,7 @@ Follow these instructions to set up the project locally.
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/darshil89/CampusFix.git
+   git clone https://github.com/darshil89/chat-application-using-nextjs.git
    ```
 2. Set up google auth credentials in .env
 3. Install the dependencies
