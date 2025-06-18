@@ -79,7 +79,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## **Authors** 👥
 
 - **Darshil Mahraur** - [GitHub Profile](https://github.com/darshil89)
-- 
 ---
 
 ## **Support** 💬
@@ -87,7 +86,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any inquiries, feel free to reach out:
 
 - **Email**: darshilmahraur3@gmail.com
-- **Twitter**: [@yourhandle](https://x.com/DMahraur?t=vJsxXpuPpqOON9kH4Tr8jw&s=09)
+- **Twitter**: [@darshil](https://x.com/DMahraur?t=vJsxXpuPpqOON9kH4Tr8jw&s=09)
 
 ---
 
